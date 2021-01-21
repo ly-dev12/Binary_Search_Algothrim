@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> array = {1, 2, 3, 4, 5, 6};
+const std::vector<int> array = {1, 2, 3, 4, 5, 6};
 
 // Declare funcs
-int SearchAl(std::vector<int>& vec, int init, int end, int elem);
+int SearchAl(const std::vector<int>& vec, int init, int end, int elem);
  
 int main()
 {
@@ -14,7 +14,7 @@ int main()
     return 0;
 };
 
-int SearchAl(std::vector<int>& vec, int init, int end, int elem) 
+int SearchAl(const std::vector<int>& vec, int init, int end, int elem) 
 {
     //std::cout << "tamaño: " << end << std::endl;
     int mod = ((init + end) / 2);
